@@ -1,1 +1,22 @@
-To install simply copy the files into your home folder.
+To install simply copy .gitconfig, .bash_profile into your home folder.
+
+####################################################################
+# Setup p4Merge
+Download p4merge from site and install then follow below. .gitconfig already has the settings configured.
+Create a new text file in /usr/local/bin called p4merge and add the following lines:
+
+#!/bin/sh
+/Applications/p4merge.app/Contents/MacOS/p4merge $*
+Make the script executable by entering this command:
+
+chmod +x p4merge
+p4diff*
+Create a new text file in /usr/local/bin called p4diff and add the following lines:
+
+#!/bin/sh
+[ $# -eq 7 ] && /usr/local/bin/p4merge "$2" "$5"
+Make the script executable by entering this command:
+
+chmod +x p4diff
+
+####################################################################
