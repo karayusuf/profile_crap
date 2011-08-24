@@ -7,5 +7,16 @@
   type = cat-file -t
   dump = cat-file -p
 [user]
-	name = Adam Trepanier
-	email = adam.trepanier@gmail.com
+  name = Adam Trepanier
+  email = adam.trepanier@gmail.com
+
+[merge]
+  keepBackup = false;
+  tool = p4merge
+[mergetool "p4merge"]
+  cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+  keepTemporaries = false
+  trustExitCode = false
+  keepBackup = false
+[diff]
+  external = p4diff
