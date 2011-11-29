@@ -51,4 +51,4 @@ alias get='git '
 ll () { ls -Flas "$@" ; }        # long listing, function
 alias ll='ls -Flas'              # long listing, alias
 
-[[ -s "/Users/atrepanier/.rvm/scripts/rvm" ]] && source "/Users/atrepanier/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
