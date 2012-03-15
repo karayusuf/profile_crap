@@ -47,8 +47,15 @@ alias gh='git hist'
 
 alias got='git '
 alias get='git '
+alias r='script/rails'
 
 ll () { ls -Flas "$@" ; }        # long listing, function
 alias ll='ls -Flas'              # long listing, alias
+
+alias ber='bundle exec rake'
+alias cdef='cucumber -p default'
+alias cwip='cucumber -p wip'
+alias cjs='cucumber -p javascript'
+alias call='cucumber -p all'
 
 [[ -s "/Users/atrepanier/.rvm/scripts/rvm" ]] && source "/Users/atrepanier/.rvm/scripts/rvm"  # This loads RVM into a shell session.
