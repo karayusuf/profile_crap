@@ -9,12 +9,11 @@
   dump = cat-file -p
 
 [user]
-  name = Adam Trepanier
+	name = Adam Trepanier
   email = adam.trepanier@gmail.com
 
 [merge]
   keepBackup = false;
-  tool = p4merge
 
 [mergetool "p4merge"]
   cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
@@ -23,4 +22,3 @@
   keepBackup = false
 
 [diff]
-  external = p4diff
