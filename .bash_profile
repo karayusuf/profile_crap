@@ -58,4 +58,4 @@ alias cwip='cucumber -p wip'
 alias cjs='cucumber -p javascript'
 alias call='cucumber -p all'
 
-[[ -s "/Users/atrepanier/.rvm/scripts/rvm" ]] && source "/Users/atrepanier/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
