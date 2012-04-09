@@ -1,0 +1,15 @@
+# ~/.tmuxinator/oor.yml
+# you can make as many tabs as you wish...
+
+project_name: ObjectsOnRails
+project_root: ~/Work/objects_on_rails
+rvm: 1.9.3-p125@oor
+#pre: sudo /etc/rc.d/mysqld start
+tabs:
+  - editor:
+      layout: even-vertical
+      panes:
+        - vim .
+        - guard
+  - console:
+    

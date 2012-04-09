@@ -1,0 +1,15 @@
+# ~/.tmuxinator/oor.yml
+# you can make as many tabs as you wish...
+
+project_name: Rover
+project_root: ~/Work/rover
+rvm: jruby-1.6.4@rover
+#pre:usudo /etc/rc.d/mysqld start
+tabs:
+  - editor:
+      layout: even-vertical
+      panes:
+        - vim .
+        - guard
+  - console:
+    
