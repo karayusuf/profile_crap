@@ -9,7 +9,7 @@
   dump = cat-file -p
 
 [user]
-	name = Adam Trepanier
+  name = Adam Trepanier
   email = adam.trepanier@gmail.com
 
 [merge]
@@ -21,4 +21,10 @@
   trustExitCode = false
   keepBackup = false
 
-[diff]
+[color]
+  status = auto
+  diff = auto
+  branch = auto
+
+[core]
+  excludesfile = ~/.gitignore_global
