@@ -1,18 +1,17 @@
 # ~/.tmuxinator/oor.yml
 # you can make as many tabs as you wish...
 
-project_name: ObjectsOnRails
-project_root: ~/Work/objects_on_rails
-rvm: 1.9.3-p125@oor
+project_name: DigitalArvSystems-Alexandria
+project_root: ~/Work/videoserver
+rvm: 1.9.3-p0@alexandria
 #pre: sudo /etc/rc.d/mysqld start
 tabs:
   - editor:
       layout: even-vertical
       panes:
-        - vim .
-        - guard
+        - cd alexandria && vim .
+        - 
   - console:
-      layout: even-horizontal
       panes:
-        -
-        -
+        - 
+        - 
