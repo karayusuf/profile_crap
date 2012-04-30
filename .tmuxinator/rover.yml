@@ -12,7 +12,7 @@ tabs:
         - vim .
         - guard
   - console:
-      layout: even-vertical
+      layout: even-horizontal
       panes:
-        -
+        - 
         -
