@@ -57,6 +57,7 @@ alias cdef='cucumber -p default'
 alias cwip='cucumber -p wip'
 alias cjs='cucumber -p javascript'
 alias call='cucumber -p all'
+alias be='bundle exec'
 
 export EDITOR=vim
 
