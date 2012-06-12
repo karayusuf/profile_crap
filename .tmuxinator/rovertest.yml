@@ -1,0 +1,11 @@
+# ~/.tmuxinator/oor.yml
+# you can make as many tabs as you wish...
+
+project_name: RoverTest
+project_root: ~/
+tabs:
+  - console:
+      layout: even-horizontal
+      panes:
+        - connect-rovertest && sudo su
+        - connect-rovertest && sudo su
