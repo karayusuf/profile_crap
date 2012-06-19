@@ -3,7 +3,6 @@
 
 project_name: Rover
 project_root: ~/Work/rover
-rvm: jruby-1.6.4@rover
 #pre:usudo /etc/rc.d/mysqld start
 tabs:
   - editor:
@@ -16,3 +15,4 @@ tabs:
       panes:
         - 
         -
+rvm: jruby-1.6.7@rover
