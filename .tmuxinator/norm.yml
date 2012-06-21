@@ -9,7 +9,7 @@ tabs:
       layout: even-vertical
       panes:
         - rvm use jruby-1.6.7@rover && vim .
-        - rvm use jruby-1.6.7@rover && guard
+        - rvm use jruby-1.6.7@rover && guard -g unit
   - console:
       layout: tiled 
       panes:
