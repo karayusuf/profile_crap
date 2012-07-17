@@ -8,19 +8,15 @@ tabs:
   - editor:
       layout: even-vertical
       panes:
-        - rvm use jruby-1.6.7@rover && vim .
-        - rvm use jruby-1.6.7@rover && guard -g unit
+        - rvm use ruby-1.9.3@rover && vim .
+        - rvm use ruby-1.9.3@rover && guard -g mri_unit
   - console:
-      layout: tiled 
+      layout: even-vertical
       panes:
         - 
         -
-        -
-        -
   - rovertest:
-      layout: tiled 
+      layout: even-vertical #tiled 
       panes:
         - connect-rovertest 
-        - connect-rovertest
-        - connect-rovertest
         - connect-rovertest
