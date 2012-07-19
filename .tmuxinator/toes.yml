@@ -1,0 +1,14 @@
+project_name: ToesToBar
+project_root: ~/Work/toes_to_bar_core
+
+tabs:
+  - editor:
+      layout: even-vertical
+      panes:
+        - vim .
+        - guard
+  - console:
+      layout: even-vertical
+      panes:
+        -
+        -
