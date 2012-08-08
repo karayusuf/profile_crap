@@ -1,15 +1,14 @@
-# ~/.tmuxinator/oor.yml
-# you can make as many tabs as you wish...
+# ~/.tmuxinator/norm.yml
 
 project_name: Rover
 project_root: ~/Work/rover
-#pre:usudo /etc/rc.d/mysqld start
+
 tabs:
   - editor:
       layout: even-vertical
       panes:
-        - rvm use ruby-1.9.3@rover && vim .
-        - rvm use ruby-1.9.3@rover && guard -g mri_unit
+        - vim .
+        -
   - console:
       layout: even-vertical
       panes:
@@ -18,5 +17,5 @@ tabs:
   - rovertest:
       layout: even-vertical #tiled 
       panes:
-        - connect-rovertest 
-        - connect-rovertest
+        - connect-juggernaut
+        - connect-juggernaut

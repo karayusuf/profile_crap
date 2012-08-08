@@ -58,6 +58,7 @@ alias cwip='cucumber -p wip'
 alias cjs='cucumber -p javascript'
 alias call='cucumber -p all'
 alias be='bundle exec'
+alias re='rbenv'
 
 export EDITOR=vim
 
