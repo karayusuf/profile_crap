@@ -40,3 +40,6 @@ eval "$(rbenv init -)"
 
 alias ll='ls -al'
 alias rdtp='rake db:test:prepare'
+alias gs='gst'
+alias gd='gdv'
+alias gcm='git commit -message '
