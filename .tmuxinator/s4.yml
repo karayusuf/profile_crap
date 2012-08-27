@@ -1,0 +1,16 @@
+# ~/.tmuxinator/s4.yml
+
+project_name: S4
+project_root: ~/Work/s4
+
+tabs:
+  - editor:
+      layout: even-vertical
+      panes:
+        - vim .
+        -
+  - console:
+      layout: even-vertical
+      panes:
+        - 
+        -
