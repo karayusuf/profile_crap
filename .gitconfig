@@ -9,10 +9,11 @@
   dump = cat-file -p
 
 [user]
-  name = Adam Trepanier
-  email = adam.trepanier@gmail.com
+	name = Adam Trepanier
+	email = adam.trepanier@gmail.com
 
 [merge]
+  tool= p4merge
   keepBackup = false;
 
 [mergetool "p4merge"]
@@ -28,3 +29,5 @@
 
 [core]
   excludesfile = ~/.gitignore_global
+[mergetool]
+	keepBackup = true
