@@ -40,7 +40,7 @@ export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Hom
 
 eval "$(rbenv init -)"
 
-alias ll='ls -al'
+alias ll='ls -altr'
 alias rdtp='rake db:test:prepare'
 alias gs='gst'
 alias gd='gdv'
@@ -101,4 +101,9 @@ grab_latest_backup_for_cust() {
   scp atrepanier@10.10.220.8:"$krusty_path" .
   echo "Setting up database for $CUSTOMER"
   setup_db_for_cust $MASTER $CUSTOMER
+}
+
+open_pair_session() {
+  tmux -S /tmp/pair
+  tmux -S /tmp/pair attach
 }
