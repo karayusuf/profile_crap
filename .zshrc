@@ -21,7 +21,7 @@ ZSH_THEME="crunch"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
@@ -106,4 +106,8 @@ grab_latest_backup_for_cust() {
 open_pair_session() {
   tmux -S /tmp/pair
   tmux -S /tmp/pair attach
+}
+
+rename_brightree_backup() {
+  for f in *; do mv -- "$f" "${f//#[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-/}"; done
 }
