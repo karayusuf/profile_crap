@@ -29,7 +29,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx ruby bundler rails3)
+plugins=(brew gem lein git osx ruby bundler rails3 vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -46,9 +46,6 @@ alias gs='gst'
 alias gd='gdv'
 alias gcm='git commit -m '
 alias go='git co '
-alias ree='rbenv shell ree-1.8.7-2012.02'
-alias jrb='rbenv shell jruby-1.6.7.2'
-alias rb19='rbenv shell 1.9.3-p194'
 alias rs='rails server'
 alias rc='rails console'
 
