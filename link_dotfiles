@@ -1,0 +1,7 @@
+ln -sf profile_crap/dotfiles/.tmuxinator ~/.tmuxinator
+ln -sf profile_crap/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf profile_crap/dotfiles/zsh/.zshrc ~/.zshrc
+ln -sf profile_crap/dotfiles/git/.gitconfig ~/.gitconfig
+ln -sf profile_crap/dotfiles/git/.gitignore_global ~/.gitignore_global
+ln -sf profile_crap/dotfiles/git/.git_template ~/.git_template
+ln -sf profile_crap/bin ~/bin
