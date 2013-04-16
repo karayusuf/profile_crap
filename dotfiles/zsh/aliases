@@ -1,0 +1,8 @@
+alias ll='ls -altr'
+alias rdtp='rake db:test:prepare'
+alias gs='gst'
+alias gd='gdv'
+alias gcm='git commit -m '
+alias go='git co '
+alias rs='rails server'
+alias rc='rails console'

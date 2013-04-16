@@ -31,3 +31,5 @@
   excludesfile = ~/.gitignore_global
 [mergetool]
 	keepBackup = true
+[init]
+	templatedir = ~/.git_template
