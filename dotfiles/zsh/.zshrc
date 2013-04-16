@@ -33,8 +33,8 @@ plugins=(brew gem lein git osx ruby bundler rails3 vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
-source ~/dotfiles/zsh/env
-source ~/dotfiles/zsh/aliases
-source ~/dotfiles/zsh/scripts
+source ~/profile_crap/dotfiles/zsh/env
+source ~/profile_crap/dotfiles/zsh/aliases
+source ~/profile_crap/dotfiles/zsh/scripts
 
 eval "$(rbenv init -)"

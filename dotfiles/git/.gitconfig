@@ -10,8 +10,8 @@
 	ctags = !.git/hooks/ctags
 
 [user]
-	name = Adam Trepanier
-	email = adam.trepanier@gmail.com
+  name = Adam Trepanier
+  email = adam.trepanier@gmail.com
 
 [merge]
   tool= p4merge
@@ -30,7 +30,5 @@
 
 [core]
   excludesfile = ~/.gitignore_global
-[mergetool]
-	keepBackup = true
 [init]
-	templatedir = ~/.git_template
+  templatedir = ~/.git_template
