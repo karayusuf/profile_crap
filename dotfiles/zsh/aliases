@@ -1,3 +1,4 @@
+alias ctags='/usr/local/Cellar/ctags/5.8/bin/ctags'
 alias ll='ls -altr'
 alias rdtp='rake db:test:prepare'
 alias gs='gst'
