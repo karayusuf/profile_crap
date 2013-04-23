@@ -5,3 +5,4 @@ ln -sf profile_crap/dotfiles/git/.gitconfig ~/.gitconfig
 ln -sf profile_crap/dotfiles/git/.gitignore_global ~/.gitignore_global
 ln -sf profile_crap/dotfiles/git/.git_template ~/.git_template
 ln -sf profile_crap/bin ~/bin
+ln -sf profile_crap/vim/vimrc ~/.vimrc
