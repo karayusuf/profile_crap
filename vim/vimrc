@@ -36,6 +36,7 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'gregsexton/gitv'
+Bundle 'janx/vim-rubytest'
 
 " vim-scripts repos
 " Bundle 'L9'
@@ -80,6 +81,15 @@ let g:ctrlp_match_window_bottom = 1
 " Ack support
 map <leader>f :Ack
 
+" Ruby Test
+" let g:rubytest_in_quickfix = 1
+"change from <Leader>t to <Leader>r 
+map <Leader>r <Plug>RubyTestRun
+"change from <Leader>T to <Leader>R 
+map <Leader>R <Plug>RubyFileRun
+"change from <Leader>l to <Leader>/ 
+map <Leader>L <Plug>RubyTestRunLast
+
 " moving between windows
 noremap <leader>h :wincmd h<CR>
 noremap <leader>j :wincmd j<CR>
@@ -122,7 +132,7 @@ set statusline+=%{fugitive#statusline()}
 set guioptions-=T
 
 "map to CommandT TextMate style finder
-nnoremap <leader>t :CtrlP<CR>
+nnoremap <leader>p :CtrlP<CR>
 let g:ctrlp_jump_to_buffer=0 "Do not jump to a different tab.  This was screwing up the buffer list.
 let g:ctrlp_use_caching=0 "Does not cache files now
 
@@ -144,13 +154,6 @@ set nobackup
 set noswapfile
 set backupdir=/tmp
 set directory=/tmp
-
-"change from <Leader>t to <Leader>r 
-" map <Leader>r <Plug>RubyTestRun
-"change from <Leader>T to <Leader>R 
-" map <Leader>R <Plug>RubyFileRun
-"change from <Leader>l to <Leader>/ 
-" map <Leader>/ <Plug>RubyTestRunLast
 
 " Run the @q macro
 noremap <Leader>q @q
