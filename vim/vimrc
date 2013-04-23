@@ -1,0 +1,162 @@
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+"Use Vim settings, rather then Vi settings (much better!).
+"This must be first, because it changes other options as a side effect.
+set nocompatible
+
+"allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+syntax on
+filetype plugin indent on
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+"let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" github repos
+Bundle 'jeetsukumaran/vim-buffergator'
+Bundle 'mileszs/ack.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'claco/jasmine.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'ervandew/supertab'
+Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails.git'
+Bundle 'tpope/vim-endwise'
+Bundle 'itspriddle/vim-jquery'
+Bundle 'tpope/vim-surround'
+Bundle 'tomtom/tlib_vim'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'gregsexton/gitv'
+
+" vim-scripts repos
+" Bundle 'L9'
+" Bundle 'FuzzyFinder'
+
+" non github repos
+" Bundle 'git://git.wincent.com/command-t.git'
+
+"set leader to space bar
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
+set gfn=Monaco:h11
+
+syntax enable
+colorscheme vividchalk
+
+"indent settings
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set autoindent
+
+""folding settings
+set foldmethod=indent "fold based on indent
+set foldnestmax=6       "deepest fold is 3 levels
+set nofoldenable        "dont fold by default
+
+map <leader>s ysiw
+
+" Toffle buffer explorer
+noremap <Leader>b :BuffergatorToggle<CR>
+"
+" Buffergator settings
+let g:buffergator_viewport_split_policy = "T"   " Split horizontal at top for buffers
+let g:buffergator_sort_regime="filepath"
+let g:buffergator_split_size=15
+
+" Show match window at top
+let g:ctrlp_match_window_bottom = 1
+
+" Ack support
+map <leader>f :Ack
+
+" moving between windows
+noremap <leader>h :wincmd h<CR>
+noremap <leader>j :wincmd j<CR>
+noremap <leader>k :wincmd k<CR>
+noremap <leader>l :wincmd l<CR>
+   
+" Rails settings
+noremap ;a :A<CR>
+noremap ;sa :AS<CR>
+noremap ;va :AV<CR>
+
+noremap ;rm :Rmodel<Space>
+noremap ;rv :Rview<Space>
+noremap ;rc :Rcontroller<Space>
+noremap ;rh :Rhelper<Space>
+
+" Toggle Nerd tree :NERDTreeToggle
+noremap ;ne :NERDTreeToggle<CR>
+"silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
+nnoremap <silent> <C-f> :NERDTreeFind<CR>
+
+
+set showcmd     "show incomplete cmds down the bottom
+set showmode    "show current mode down the bottom
+
+set incsearch   "find the next match as we type the search
+set hlsearch    "hilight searches by default
+
+set number      "add line numbers
+set showbreak=...
+set wrap linebreak nolist
+
+"statusline setup
+set statusline=%f       "tail of the filename
+
+"Git
+set statusline+=%{fugitive#statusline()}
+
+"turn off needless toolbar on gvim/mvim
+set guioptions-=T
+
+"map to CommandT TextMate style finder
+nnoremap <leader>t :CtrlP<CR>
+let g:ctrlp_jump_to_buffer=0 "Do not jump to a different tab.  This was screwing up the buffer list.
+let g:ctrlp_use_caching=0 "Does not cache files now
+
+"mark syntax errors with :signs
+let g:syntastic_enable_signs=1
+
+"turn off buffergator keymaps
+let g:buffergator_suppress_keymaps=1
+
+"close the buffer
+noremap <Leader>c :bunload<CR>
+noremap <Leader>C :bdelete<CR>
+
+"make vim more liberal about changed buffers.  bn now switched even if changed
+set hidden
+
+"get rid of backup and swap files
+set nobackup
+set noswapfile
+set backupdir=/tmp
+set directory=/tmp
+
+"change from <Leader>t to <Leader>r 
+" map <Leader>r <Plug>RubyTestRun
+"change from <Leader>T to <Leader>R 
+" map <Leader>R <Plug>RubyFileRun
+"change from <Leader>l to <Leader>/ 
+" map <Leader>/ <Plug>RubyTestRunLast
+
+" Run the @q macro
+noremap <Leader>q @q
+
+" Copy out to clipboard
+vmap <C-c> :w !pbcopy<CR><CR>
+
+" Regenerate ctags in the bundle
+map rt :!~/.rbenv/shims/bundle list --paths=true \| xargs ctags --tag-relative -f .git/tags --extra=+f --exclude=.git --exclude=log -R * 

@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/adam/Work/s4'
+let g:netrw_dirhist_2='/Users/adam/.vim'
+let g:netrw_dirhist_3='/Users/adam/Work/s4'
+let g:netrw_dirhist_4='/Users/adam/Work/rover'
+let g:netrw_dirhist_5='/Users/adam/Work/tstools'
+let g:netrw_dirhist_6='/Users/adam/Work/rover_java_wrapper'
+let g:netrw_dirhist_7='/Users/adam/Work/rover'
+let g:netrw_dirhist_8='/Users/adam/.vim'
