@@ -51,7 +51,7 @@ let mapleader=" "
 set gfn=Monaco:h11
 
 syntax enable
-colorscheme vividchalk
+colorscheme vibrinkink
 
 "indent settings
 set shiftwidth=2
