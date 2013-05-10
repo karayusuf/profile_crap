@@ -17,7 +17,7 @@ if !filereadable(vundle_readme)
   silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
   let iCanHazVundle=0
 endif
-            endif
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -139,7 +139,7 @@ set statusline+=%{fugitive#statusline()}
 set guioptions-=T
 
 "map to CommandT TextMate style finder
-nnoremap <leader>p :CtrlP<CR>
+nnoremap <leader>t :CtrlP<CR>
 let g:ctrlp_jump_to_buffer=0 "Do not jump to a different tab.  This was screwing up the buffer list.
 let g:ctrlp_use_caching=0 "Does not cache files now
 
@@ -169,4 +169,4 @@ noremap <Leader>q @q
 vmap <C-c> :w !pbcopy<CR><CR>
 
 " Regenerate ctags in the bundle
-map rt :!~/.rbenv/shims/bundle list --paths=true \| xargs ctags --tag-relative -f .git/tags --extra=+f --exclude=.git --exclude=log -R * 
+noremap ;rt :!~/.rbenv/shims/bundle list --paths=true \| xargs ctags --tag-relative -f .git/tags --extra=+f --exclude=.git --exclude=log -R * 

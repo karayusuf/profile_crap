@@ -4,6 +4,7 @@ ln -sf profile_crap/dotfiles/zsh/zshrc ~/.zshrc
 ln -sf profile_crap/dotfiles/git/gitconfig ~/.gitconfig
 ln -sf profile_crap/dotfiles/git/gitignore_global ~/.gitignore_global
 ln -sf profile_crap/dotfiles/rspec ~/.rspec
+ln -sf profile_crap/dotfiles/jrubyopts ~/.jrubyopts
 ln -sf profile_crap/bin ~/bin
 ln -sf profile_crap/vim/vimrc ~/.vimrc
 ln -sf profile_crap/vim ~/.vim
