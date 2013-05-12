@@ -44,6 +44,7 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'gregsexton/gitv'
 Bundle 'janx/vim-rubytest'
+Bundle 'cakebaker/scss-syntax.vim'
 
 " vim-scripts repos
 " Bundle 'L9'
@@ -84,6 +85,8 @@ let g:buffergator_split_size=15
 
 " Show match window at top
 let g:ctrlp_match_window_bottom = 1
+let g:ctrlp_custom_ignore = { 'dir':  '\v[\/](\.git|\.hg|\.svn|tmp)$' }
+
 
 " Ack support
 map <leader>f :Ack
