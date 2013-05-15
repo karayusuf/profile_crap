@@ -45,6 +45,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'gregsexton/gitv'
 Bundle 'janx/vim-rubytest'
 Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'garbas/vim-snipmate'
 
 " vim-scripts repos
 " Bundle 'L9'
